@@ -10,22 +10,22 @@ body {
 
 
 .score1, .score2{ background-color:#fff}
-  .score3, .score4{background-color:black}
-    .score5, .score6{background-color:blue}
-      .score7, .score8{background-color:red}
+  .score3, .score4{background-color:black; color:#fff}
+    .score5, .score6{background-color:blue; color:#fff}
+      .score7, .score8{background-color:red; color:#fff}
         .score9, .score10{background-color:yellow}
 
 
         .todoListMain .header input {
           padding: 10px;
-          font-size: 16px;
+          font-size: 30px;
           border: 2px solid #FFF;
           width: 165px;
           border-radius: 4px;
         }
         .todoListMain .header button {
           padding: 10px;
-          font-size: 16px;
+          font-size: 30px;
           margin: 10px;
           margin-right: 0px;
           background-color: #0066FF;
@@ -65,3 +65,24 @@ body {
           background-color: pink;
           cursor: pointer;
         }
+
+.header{
+text-align: center;
+}
+
+.scoretext{
+font-size: 60px;
+text-align: center;
+border-radius: 30px;
+margin:10px;
+height:90px;
+}
+
+.endnumber{
+text-align: center;
+font-size: 46px;
+color:#fff;
+background-color: #017cc1;
+border-radius: 15px;
+
+}

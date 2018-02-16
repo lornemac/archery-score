@@ -42,8 +42,7 @@ if (this.state.arrowcounter > 1){
 this.setState({endnumber: this.state.endnumber+1});
 this.setState({arrowcounter: 0})
 }
-console.log("just scores: ",currentScores);
-console.log("props: ",this.state);
+console.log(currentScores);
 
 event.preventDefault();
 };
@@ -61,8 +60,7 @@ event.preventDefault();
   <button type="submit">add</button>
 </form>
 </div>
-<ScoreList allscores={this.state.scores} end={this.state.endnumber} />
-<div className="endnumber">Previous ends</div>
+<table className="table table-bordered"><tbody><tr><th>End</th><th>Arrow 1</th><th>Arrow 2</th><th>Arrow 3</th></tr><ScoreList allscores={this.state.scores} end={this.state.endnumber} /></tbody></table>
 <PastScores allscores={this.state.scores} />
 </div>
 </div>

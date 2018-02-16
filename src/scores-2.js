@@ -14,7 +14,8 @@ class ScoreList extends Component{
 
   createScores(score){
     var scorecolour = "score"+score.score;
-    return <div className={`col scoretext ${scorecolour}`}  key={score.key}>{score.score}</div>
+
+    return <td key={score.key} className={scorecolour}>{score.score}</td>
 
   }
 
@@ -33,10 +34,10 @@ class ScoreList extends Component{
 
         return(
 
-<div className="headerArea">
-            <div className="endnumber">End: {this.props.end}</div>
-            <div className="row">{scoreList}</div>
-</div>
+            <tr>
+              <td>{this.props.end}</td>
+              {scoreList}
+            </tr>
 
         );
 
